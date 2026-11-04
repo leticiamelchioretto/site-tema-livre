@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cadastro — Cavaleiros da Antiga República</title>
+    <meta name="description" content="Formulário de inscrição para receber conteúdos sobre Cavaleiros da Antiga República.">
+  </head>
+  <body>
+    <a href="#conteudo">Pular para o conteúdo</a>
+    <header>
+      <p>Cavaleiros da Antiga República</p>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="dados.html">Dados</a></li>
+          <li><a href="cadastro.html" aria-current="page">Cadastro</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="conteudo">
+      <h1>Inscrição para receber conteúdos sobre Cavaleiros da Antiga República</h1>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Dados pessoais</legend>
+          <p>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" autocomplete="name" required>
+          </p>
+          <p>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </p>
+          <p>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" autocomplete="tel">
+          </p>
+          <p>
+            <label for="nascimento">Data de nascimento:</label>
+            <input type="date" id="nascimento" name="nascimento" autocomplete="bday" required>
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Preferências de leitura</legend>
+          <fieldset>
+            <legend>Formato preferido</legend>
+            <p>
+              <input type="radio" id="impresso" name="formato" value="impresso" required>
+              <label for="impresso">Impresso</label>
+              <input type="radio" id="digital" name="formato" value="digital">
+              <label for="digital">Digital</label>
+              <input type="radio" id="ambos" name="formato" value="ambos">
+              <label for="ambos">Ambos</label>
+            </p>
+          </fieldset>
+          <p>
+            <label for="edicoes">Edições já lidas (1 a 6):</label>
+            <input type="number" id="edicoes" name="edicoes" min="1" max="6">
+          </p>
+          <p>
+            <label for="nota">Nota para a série (0 a 10):</label>
+            <input type="number" id="nota" name="nota" min="0" max="10" step="0.1">
+          </p>
+          <fieldset>
+            <legend>Temas de interesse</legend>
+            <p>
+              <input type="checkbox" id="historia" name="temas" value="historia">
+              <label for="historia">História</label>
+              <input type="checkbox" id="arte" name="temas" value="arte">
+              <label for="arte">Arte</label>
+            </p>
+          </fieldset>
+        </fieldset>
+        <fieldset>
+          <legend>Participação</legend>
+          <p>
+            <label for="personagem">Personagem favorito:</label>
+            <select id="personagem" name="personagem" required>
+              <option value="">Selecione</option>
+              <option value="zayne">Zayne Carrick</option>
+              <option value="gryph">Gryph</option>
+              <option value="jarael">Jarael</option>
+            </select>
+          </p>
+          <p>
+            <label for="comentario">Comentário (até 300 caracteres):</label>
+            <textarea id="comentario" name="comentario" rows="4" maxlength="300"></textarea>
+          </p>
+          <p>
+            <input type="checkbox" id="termos" name="termos" value="aceito" required>
+            <label for="termos">Li e aceito os termos de uso do site.</label>
+          </p>
+        </fieldset>
+        <p>
+          <button type="submit">Enviar inscrição</button>
+          <button type="reset">Limpar formulário</button>
+        </p>
+      </form>
+    </main>
+    <footer>
+      <p>Leticia Melchioretto - Turma DS M3 2025/1 M3</p>
+      <p>Projeto escolar sem fins comerciais. Star Wars e Knights of the Old Republic pertencem aos seus respectivos detentores de direitos.</p>
+    </footer>
+  </body>
+</html>
+ 
